@@ -15,8 +15,6 @@ class String
   end
 
   def count_sentences
-    sentences = self.split(/[.!?]/)
-    sentences.delete("")
-    sentences.length
+    self.split(/[.!?]/).delete("").length
   end
 end
